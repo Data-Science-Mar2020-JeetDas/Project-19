@@ -1,0 +1,18 @@
+
+# Question - 01 : Afghanistan
+
+Afghanistan = df[df.Location == 'Afghanistan']
+print(Afghanistan[1:])
+
+
+
+      Location                           Indicator  Period  First Tooltip
+1  Afghanistan  Estimated number of malaria deaths    2016  294 [100-530]
+2  Afghanistan  Estimated number of malaria deaths    2015   175 [60-320]
+3  Afghanistan  Estimated number of malaria deaths    2014   136 [50-260]
+4  Afghanistan  Estimated number of malaria deaths    2013    99 [30-200]
+5  Afghanistan  Estimated number of malaria deaths    2012   117 [30-260]
+6  Afghanistan  Estimated number of malaria deaths    2011   242 [70-490]
+7  Afghanistan  Estimated number of malaria deaths    2010   200 [60-410]
+
+
