@@ -1,0 +1,344 @@
+# -*- coding: utf-8 -*-
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import random
+import pandas
+
+
+df = pd.read_csv("C:/Users/Jeet Das/Desktop/malaria-data.csv",encoding="utf-8")
+
+print("\n----------------------- output data :---------------------\n")
+print("Project - 19 : Country wise Estimated number of malaria deaths");
+print("\n------------------------------------------------------------\n")
+
+
+# Question – A : get row and column numbers 
+
+print('---------------------------------------------')
+print("Dimension of the data frame = ",df.shape)
+print('---------------------------------------------')
+
+# Question – B : print column names :
+
+print('------------------------\n Column names as follows :')
+print('------------------------\n')
+count = 0
+for col in df.columns: 
+        print(count,"-->",col)
+        count = count+1
+print("\n-----------------------------\n")
+
+# Question - C : print available country
+
+country = df.groupby(['Location'])[['Period']].count()
+print("---------------------------------")
+print("\tAvailable country names : ")
+print("-------------------------------")
+print(country)
+print("-------------------------------")
+count = 0
+for row in range(len(country)): 
+        count = count+1
+print("total no. of country = ",count)        
+print("-----------------------------\n")
+
+
+# Question - D : Available years data for which data is available
+
+years = df.groupby(['Period'])[['Location']].count()
+print("---------------------------------")
+print("\tAvailable years data : ")
+print("-------------------------------")
+print(years)
+print("-------------------------------")
+count = 0
+for row in range(len(years)): 
+        count = count+1
+print("total no. of years = ",count)        
+print("-----------------------------\n")
+
+
+# Question - 01 : Afghanistan
+
+Afghanistan = df[df.Location == 'Afghanistan']
+print(Afghanistan[1:])
+
+# Question - 02 : Algeria  
+
+Algeria  = df[df.Location == 'Algeria']
+print(Algeria[1:])                                                                         
+
+# Question - 03 : Argentina 
+
+Argentina  = df[df.Location == 'Argentina']
+print(Argentina[1:])                                  
+
+# Question - 04 : Armenia 
+
+Armenia = df[df.Location == 'Armenia']
+print(Armenia[1:])
+
+# Question - 05 : Bangladesh
+
+Bangladesh = df[df.Location == 'Bangladesh']
+print(Bangladesh[1:])
+
+# Question - 06 : Central African Republic
+
+Central_African_Republic = df[df.Location == 'Central African Republic']
+print(Central_African_Republic[1:])
+
+# Question - 07 : Chad
+
+Chad = df[df.Location == 'Chad']
+print(Chad[1:])
+
+# Question - 08 : China
+
+China = df[df.Location == 'China']
+print(China[1:])
+
+# Question - 09 : India
+
+India = df[df.Location == 'India']
+print(India[1:])
+
+# Question - 10 : Indonesia
+
+Indonesia = df[df.Location == 'Indonesia']
+print(Indonesia[1:])
+
+# Question - 11 : Thailand
+
+Thailand = df[df.Location == 'Thailand']
+print(Thailand[1:])
+
+# Question - 12 : United Arab Emirates
+
+UAE = df[df.Location == 'United Arab Emirates']
+print(UAE[1:])
+
+----------------------- output data :---------------------
+
+Project - 19 : Country wise Estimated number of malaria deaths
+
+------------------------------------------------------------
+
+---------------------------------------------
+Dimension of the data frame =  (856, 4)
+---------------------------------------------
+------------------------
+ Column names as follows :
+------------------------
+
+0 --> Location
+1 --> Indicator
+2 --> Period
+3 --> First Tooltip
+
+-----------------------------
+
+---------------------------------
+        Available country names : 
+-------------------------------
+                                       Period
+Location                                     
+Afghanistan                                 8
+Algeria                                     8
+Angola                                      8
+Argentina                                   8
+Armenia                                     8
+Azerbaijan                                  8
+Bangladesh                                  8
+Belize                                      8
+Benin                                       8
+Bhutan                                      8
+Bolivia (Plurinational State of)            8
+Botswana                                    8
+Brazil                                      8
+Burkina Faso                                8
+Burundi                                     8
+Cabo Verde                                  8
+Cambodia                                    8
+Cameroon                                    8
+Central African Republic                    8
+Chad                                        8
+China                                       8
+Colombia                                    8
+Comoros                                     8
+Congo                                       8
+Costa Rica                                  8
+Côte d’Ivoire                               8
+Democratic People's Republic of Korea       8
+Democratic Republic of the Congo            8
+Djibouti                                    8
+Dominican Republic                          8
+                                      ...
+Rwanda                                      8
+Sao Tome and Principe                       8
+Saudi Arabia                                8
+Senegal                                     8
+Sierra Leone                                8
+Solomon Islands                             8
+Somalia                                     8
+South Africa                                8
+South Sudan                                 8
+Sri Lanka                                   8
+Sudan                                       7
+Sudan (until 2011)                          1
+Suriname                                    8
+Syrian Arab Republic                        8
+Tajikistan                                  8
+Thailand                                    8
+Timor-Leste                                 8
+Togo                                        8
+Turkey                                      8
+Turkmenistan                                8
+Uganda                                      8
+United Arab Emirates                        8
+United Republic of Tanzania                 8
+Uzbekistan                                  8
+Vanuatu                                     8
+Venezuela (Bolivarian Republic of)          8
+Viet Nam                                    8
+Yemen                                       8
+Zambia                                      8
+Zimbabwe                                    8
+
+[108 rows x 1 columns]
+-------------------------------
+total no. of country =  108
+-----------------------------
+
+---------------------------------
+        Available years data : 
+-------------------------------
+        Location
+Period          
+2010         107
+2011         107
+2012         107
+2013         107
+2014         107
+2015         107
+2016         107
+2017         107
+-------------------------------
+total no. of years =  8
+-----------------------------
+
+      Location                           Indicator  Period  First Tooltip
+1  Afghanistan  Estimated number of malaria deaths    2016  294 [100-530]
+2  Afghanistan  Estimated number of malaria deaths    2015   175 [60-320]
+3  Afghanistan  Estimated number of malaria deaths    2014   136 [50-260]
+4  Afghanistan  Estimated number of malaria deaths    2013    99 [30-200]
+5  Afghanistan  Estimated number of malaria deaths    2012   117 [30-260]
+6  Afghanistan  Estimated number of malaria deaths    2011   242 [70-490]
+7  Afghanistan  Estimated number of malaria deaths    2010   200 [60-410]
+   Location                           Indicator  Period First Tooltip
+9   Algeria  Estimated number of malaria deaths    2016             0
+10  Algeria  Estimated number of malaria deaths    2015             0
+11  Algeria  Estimated number of malaria deaths    2014             0
+12  Algeria  Estimated number of malaria deaths    2013             0
+13  Algeria  Estimated number of malaria deaths    2012             0
+14  Algeria  Estimated number of malaria deaths    2011             0
+15  Algeria  Estimated number of malaria deaths    2010             1
+     Location                           Indicator  Period First Tooltip
+25  Argentina  Estimated number of malaria deaths    2016             0
+26  Argentina  Estimated number of malaria deaths    2015             0
+27  Argentina  Estimated number of malaria deaths    2014             0
+28  Argentina  Estimated number of malaria deaths    2013             0
+29  Argentina  Estimated number of malaria deaths    2012             0
+30  Argentina  Estimated number of malaria deaths    2011             0
+31  Argentina  Estimated number of malaria deaths    2010             0
+   Location                           Indicator  Period First Tooltip
+33  Armenia  Estimated number of malaria deaths    2016             0
+34  Armenia  Estimated number of malaria deaths    2015             0
+35  Armenia  Estimated number of malaria deaths    2014             0
+36  Armenia  Estimated number of malaria deaths    2013             0
+37  Armenia  Estimated number of malaria deaths    2012             0
+38  Armenia  Estimated number of malaria deaths    2011             0
+39  Armenia  Estimated number of malaria deaths    2010             0
+      Location                           Indicator  Period First Tooltip
+49  Bangladesh  Estimated number of malaria deaths    2016    73 [3-120]
+50  Bangladesh  Estimated number of malaria deaths    2015   107 [4-180]
+51  Bangladesh  Estimated number of malaria deaths    2014   132 [5-210]
+52  Bangladesh  Estimated number of malaria deaths    2013    60 [2-100]
+53  Bangladesh  Estimated number of malaria deaths    2012    87 [3-140]
+54  Bangladesh  Estimated number of malaria deaths    2011  250 [10-420]
+55  Bangladesh  Estimated number of malaria deaths    2010  274 [10-470]
+                     Location                           Indicator  Period  \
+145  Central African Republic  Estimated number of malaria deaths    2016   
+146  Central African Republic  Estimated number of malaria deaths    2015   
+147  Central African Republic  Estimated number of malaria deaths    2014   
+148  Central African Republic  Estimated number of malaria deaths    2013   
+149  Central African Republic  Estimated number of malaria deaths    2012   
+150  Central African Republic  Estimated number of malaria deaths    2011   
+151  Central African Republic  Estimated number of malaria deaths    2010   
+
+        First Tooltip  
+145  4998 [4130-5870]  
+146  5289 [4350-6220]  
+147  5668 [4640-6690]  
+148  6106 [4990-7220]  
+149  6739 [5480-7990]  
+150  7426 [6020-8830]  
+151  8165 [6590-9730]  
+    Location                           Indicator  Period        First Tooltip
+153     Chad  Estimated number of malaria deaths    2016    8900 [6730-11100]
+154     Chad  Estimated number of malaria deaths    2015    9206 [6950-11500]
+155     Chad  Estimated number of malaria deaths    2014    9749 [7350-12200]
+156     Chad  Estimated number of malaria deaths    2013   10632 [8000-13300]
+157     Chad  Estimated number of malaria deaths    2012   11575 [8700-14400]
+158     Chad  Estimated number of malaria deaths    2011   12809 [9660-16000]
+159     Chad  Estimated number of malaria deaths    2010  13695 [10300-17000]
+    Location                           Indicator  Period First Tooltip
+161    China  Estimated number of malaria deaths    2016             0
+162    China  Estimated number of malaria deaths    2015             0
+163    China  Estimated number of malaria deaths    2014             0
+164    China  Estimated number of malaria deaths    2013             0
+165    China  Estimated number of malaria deaths    2012             0
+166    China  Estimated number of malaria deaths    2011            33
+167    China  Estimated number of malaria deaths    2010            19
+    Location                           Indicator  Period       First Tooltip
+377    India  Estimated number of malaria deaths    2016  22786 [1580-45300]
+378    India  Estimated number of malaria deaths    2015  22326 [1520-42000]
+379    India  Estimated number of malaria deaths    2014  20647 [1410-39800]
+380    India  Estimated number of malaria deaths    2013  17086 [1530-32100]
+381    India  Estimated number of malaria deaths    2012  20722 [1980-39300]
+382    India  Estimated number of malaria deaths    2011  25990 [2360-49100]
+383    India  Estimated number of malaria deaths    2010  30930 [2770-58600]
+      Location                           Indicator  Period    First Tooltip
+385  Indonesia  Estimated number of malaria deaths    2016  2239 [170-4290]
+386  Indonesia  Estimated number of malaria deaths    2015  2023 [170-3840]
+387  Indonesia  Estimated number of malaria deaths    2014  2406 [200-4570]
+388  Indonesia  Estimated number of malaria deaths    2013  3236 [280-6170]
+389  Indonesia  Estimated number of malaria deaths    2012  3893 [340-7440]
+390  Indonesia  Estimated number of malaria deaths    2011  3921 [340-7430]
+391  Indonesia  Estimated number of malaria deaths    2010  4364 [380-8290]
+     Location                           Indicator  Period First Tooltip
+737  Thailand  Estimated number of malaria deaths    2016            27
+738  Thailand  Estimated number of malaria deaths    2015            33
+739  Thailand  Estimated number of malaria deaths    2014            38
+740  Thailand  Estimated number of malaria deaths    2013            47
+741  Thailand  Estimated number of malaria deaths    2012            37
+742  Thailand  Estimated number of malaria deaths    2011            43
+743  Thailand  Estimated number of malaria deaths    2010            80
+                 Location                           Indicator  Period  \
+785  United Arab Emirates  Estimated number of malaria deaths    2016   
+786  United Arab Emirates  Estimated number of malaria deaths    2015   
+787  United Arab Emirates  Estimated number of malaria deaths    2014   
+788  United Arab Emirates  Estimated number of malaria deaths    2013   
+789  United Arab Emirates  Estimated number of malaria deaths    2012   
+790  United Arab Emirates  Estimated number of malaria deaths    2011   
+791  United Arab Emirates  Estimated number of malaria deaths    2010   
+
+    First Tooltip  
+785             0  
+786             0  
+787             0  
+788             0  
+789             0  
+790             0  
+791             0  
