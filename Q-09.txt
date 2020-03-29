@@ -1,0 +1,18 @@
+
+# Question - 09 : India
+
+India = df[df.Location == 'India']
+print(India[1:])
+
+
+
+
+
+    Location                           Indicator  Period       First Tooltip
+377    India  Estimated number of malaria deaths    2016  22786 [1580-45300]
+378    India  Estimated number of malaria deaths    2015  22326 [1520-42000]
+379    India  Estimated number of malaria deaths    2014  20647 [1410-39800]
+380    India  Estimated number of malaria deaths    2013  17086 [1530-32100]
+381    India  Estimated number of malaria deaths    2012  20722 [1980-39300]
+382    India  Estimated number of malaria deaths    2011  25990 [2360-49100]
+383    India  Estimated number of malaria deaths    2010  30930 [2770-58600]
