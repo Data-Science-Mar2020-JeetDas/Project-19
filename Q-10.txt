@@ -1,0 +1,18 @@
+
+# Question - 10 : Indonesia
+
+Indonesia = df[df.Location == 'Indonesia']
+print(Indonesia[1:])
+
+
+
+
+
+      Location                           Indicator  Period    First Tooltip
+385  Indonesia  Estimated number of malaria deaths    2016  2239 [170-4290]
+386  Indonesia  Estimated number of malaria deaths    2015  2023 [170-3840]
+387  Indonesia  Estimated number of malaria deaths    2014  2406 [200-4570]
+388  Indonesia  Estimated number of malaria deaths    2013  3236 [280-6170]
+389  Indonesia  Estimated number of malaria deaths    2012  3893 [340-7440]
+390  Indonesia  Estimated number of malaria deaths    2011  3921 [340-7430]
+391  Indonesia  Estimated number of malaria deaths    2010  4364 [380-8290]
