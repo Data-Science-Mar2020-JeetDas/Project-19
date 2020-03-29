@@ -1,0 +1,15 @@
+
+# Question - 05 : Bangladesh
+
+Bangladesh = df[df.Location == 'Bangladesh']
+print(Bangladesh[1:])
+
+
+      Location                           Indicator  Period First Tooltip
+49  Bangladesh  Estimated number of malaria deaths    2016    73 [3-120]
+50  Bangladesh  Estimated number of malaria deaths    2015   107 [4-180]
+51  Bangladesh  Estimated number of malaria deaths    2014   132 [5-210]
+52  Bangladesh  Estimated number of malaria deaths    2013    60 [2-100]
+53  Bangladesh  Estimated number of malaria deaths    2012    87 [3-140]
+54  Bangladesh  Estimated number of malaria deaths    2011  250 [10-420]
+55  Bangladesh  Estimated number of malaria deaths    2010  274 [10-470]
