@@ -1,0 +1,16 @@
+
+# Question - 08 : China
+
+China = df[df.Location == 'China']
+print(China[1:])
+
+
+
+    Location                           Indicator  Period First Tooltip
+161    China  Estimated number of malaria deaths    2016             0
+162    China  Estimated number of malaria deaths    2015             0
+163    China  Estimated number of malaria deaths    2014             0
+164    China  Estimated number of malaria deaths    2013             0
+165    China  Estimated number of malaria deaths    2012             0
+166    China  Estimated number of malaria deaths    2011            33
+167    China  Estimated number of malaria deaths    2010            19
