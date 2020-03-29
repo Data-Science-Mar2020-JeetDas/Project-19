@@ -1,0 +1,17 @@
+
+# Question - 07 : Chad
+
+Chad = df[df.Location == 'Chad']
+print(Chad[1:])
+
+
+
+
+    Location                           Indicator  Period        First Tooltip
+153     Chad  Estimated number of malaria deaths    2016    8900 [6730-11100]
+154     Chad  Estimated number of malaria deaths    2015    9206 [6950-11500]
+155     Chad  Estimated number of malaria deaths    2014    9749 [7350-12200]
+156     Chad  Estimated number of malaria deaths    2013   10632 [8000-13300]
+157     Chad  Estimated number of malaria deaths    2012   11575 [8700-14400]
+158     Chad  Estimated number of malaria deaths    2011   12809 [9660-16000]
+159     Chad  Estimated number of malaria deaths    2010  13695 [10300-17000]
