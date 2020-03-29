@@ -1,0 +1,14 @@
+# Question - 03 : Argentina 
+
+Argentina  = df[df.Location == 'Argentina']
+print(Argentina[1:])
+
+
+     Location                           Indicator  Period First Tooltip
+25  Argentina  Estimated number of malaria deaths    2016             0
+26  Argentina  Estimated number of malaria deaths    2015             0
+27  Argentina  Estimated number of malaria deaths    2014             0
+28  Argentina  Estimated number of malaria deaths    2013             0
+29  Argentina  Estimated number of malaria deaths    2012             0
+30  Argentina  Estimated number of malaria deaths    2011             0
+31  Argentina  Estimated number of malaria deaths    2010             0
