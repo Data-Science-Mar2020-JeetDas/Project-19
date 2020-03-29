@@ -1,0 +1,27 @@
+
+# Question - 06 : Central African Republic
+
+Central_African_Republic = df[df.Location == 'Central African Republic']
+print(Central_African_Republic[1:])
+
+
+
+---------------------------------------------------------------------------------
+
+                     Location                           Indicator  Period  \
+145  Central African Republic  Estimated number of malaria deaths    2016   
+146  Central African Republic  Estimated number of malaria deaths    2015   
+147  Central African Republic  Estimated number of malaria deaths    2014   
+148  Central African Republic  Estimated number of malaria deaths    2013   
+149  Central African Republic  Estimated number of malaria deaths    2012   
+150  Central African Republic  Estimated number of malaria deaths    2011   
+151  Central African Republic  Estimated number of malaria deaths    2010   
+
+        First Tooltip  
+145  4998 [4130-5870]  
+146  5289 [4350-6220]  
+147  5668 [4640-6690]  
+148  6106 [4990-7220]  
+149  6739 [5480-7990]  
+150  7426 [6020-8830]  
+151  8165 [6590-9730]  
