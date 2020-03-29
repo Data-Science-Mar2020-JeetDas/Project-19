@@ -1,0 +1,28 @@
+
+# Question - 12 : United Arab Emirates
+
+UAE = df[df.Location == 'United Arab Emirates']
+print(UAE[1:])
+
+
+--------------------------------------------------------------------------------
+
+
+
+                 Location                           Indicator  Period  \
+785  United Arab Emirates  Estimated number of malaria deaths    2016   
+786  United Arab Emirates  Estimated number of malaria deaths    2015   
+787  United Arab Emirates  Estimated number of malaria deaths    2014   
+788  United Arab Emirates  Estimated number of malaria deaths    2013   
+789  United Arab Emirates  Estimated number of malaria deaths    2012   
+790  United Arab Emirates  Estimated number of malaria deaths    2011   
+791  United Arab Emirates  Estimated number of malaria deaths    2010   
+
+    First Tooltip  
+785             0  
+786             0  
+787             0  
+788             0  
+789             0  
+790             0  
+791             0  
