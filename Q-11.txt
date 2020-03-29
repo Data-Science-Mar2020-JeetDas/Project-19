@@ -1,0 +1,16 @@
+
+# Question - 11 : Thailand
+
+Thailand = df[df.Location == 'Thailand']
+print(Thailand[1:])
+
+
+
+     Location                           Indicator  Period First Tooltip
+737  Thailand  Estimated number of malaria deaths    2016            27
+738  Thailand  Estimated number of malaria deaths    2015            33
+739  Thailand  Estimated number of malaria deaths    2014            38
+740  Thailand  Estimated number of malaria deaths    2013            47
+741  Thailand  Estimated number of malaria deaths    2012            37
+742  Thailand  Estimated number of malaria deaths    2011            43
+743  Thailand  Estimated number of malaria deaths    2010            80
